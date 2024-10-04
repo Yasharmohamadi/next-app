@@ -6,7 +6,7 @@ export default function Home() {
 		<>
 			<div className="path-wrapper">
 				<div className="path">
-					<Link href="/">Next JS app</Link>
+					<Link href="/">Home</Link>
 				</div>
 			</div>
 			<ul>

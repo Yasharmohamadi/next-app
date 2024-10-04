@@ -8,7 +8,7 @@ export default function index() {
 		<>
 			<div className="path-wrapper">
 				<div className="path">
-					<Link href="/">Next JS app</Link>
+					<Link href="/">Home</Link>
 				</div>
 				<div className="path">
 					<Link href="/courses">Courses</Link>

@@ -7,7 +7,7 @@ export default function CourseDetails() {
 	return (
 		<div className="path-wrapper">
 			<div className="path">
-				<Link href="/">Next JS app</Link>
+				<Link href="/">Home</Link>
 			</div>
 			<div className="path">
 				<Link href="/users">Users</Link>

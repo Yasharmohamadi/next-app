@@ -39,7 +39,7 @@ body {
 	position: relative;
 	font-size: 25px;
 }
-.path a:hover {
+.path a:hover > .path{
 	opacity: 0.7;
 }
 
