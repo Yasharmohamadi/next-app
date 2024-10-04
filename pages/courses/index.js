@@ -6,7 +6,14 @@ export default function index() {
 		const route = useRouter();
 	return (
 		<>
-			<h1 className="title"><Link href='/'>Next JS app</Link> / Courses</h1>
+			<div className="path-wrapper">
+				<div className="path">
+					<Link href="/">Next JS app</Link>
+				</div>
+				<div className="path">
+					<Link href="/courses">Courses</Link>
+				</div>
+			</div>
 			<ul>
 				<li className="title_child">
 					<Link href="/courses/html">Html</Link>

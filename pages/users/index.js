@@ -4,7 +4,14 @@ import Link from "next/link";
 export default function index() {
 	return (
 		<>
-			<h1 className="title"><Link href='/'>Next JS app</Link> / Users</h1>
+			<div className="path-wrapper">
+				<div className="path">
+					<Link href="/">Next JS app</Link>
+				</div>
+				<div className="path">
+					<Link href="/users">Users</Link>
+				</div>
+			</div>
 			<ul>
 				<li className="title_child">
 					<Link href="/users/yashar">Yashar</Link>

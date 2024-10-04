@@ -19,7 +19,7 @@ body {
 	background: var(--black);
 	font-family: "GeistMonoVF";
 	display: flex;
-	padding: 30px;
+	padding: 32px;
 }
 
 .path-wrapper {
@@ -42,13 +42,14 @@ body {
 .path a:hover {
 	opacity: 0.7;
 }
+
 .path a::after {
 	transform: rotate(45deg);
 	position: absolute;
 	right: 5px;
 	bottom: -7px;
 	margin: auto;
-	height: 25px;
+	height: 30px;
 	width: 2px;
 	background-color: var(--black);
 	content: "";
@@ -59,7 +60,7 @@ body {
 	right: 5px;
 	top: -7px;
 	margin: auto;
-	height: 25px;
+	height: 32px;
 	width: 2px;
 	background-color: var(--black);
 	content: "";
@@ -68,6 +69,13 @@ body {
 	display: none;
 }
 
+ul {
+	list-style: none;
+	padding: 15px 10px;
+}
+li {
+	padding: 2px 0;
+}
 li a {
 	color: #e0e0e0;
 	font-weight: 200;
@@ -75,17 +83,13 @@ li a {
 	text-decoration: none;
 }
 
-ul {
-	list-style: none;
-}
-
 li a:before {
 	content: "#";
 	color: #9e9e9ec9;
 	display: inline;
-	margin-right: 10px;
+	margin: 10px;
 	font-size: 15px;
 }
-a:hover {
+li a:hover {
 	border-bottom: 1px solid #e0e0e0;
 }

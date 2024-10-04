@@ -6,9 +6,18 @@ export default function CourseDetails() {
 	const route = useRouter();
 	return (
 		<>
-			<h1 className="title">
-				<Link href="/">Next JS app</Link> / <Link href="/courses">Courses</Link> / {route.query.coursename}
-			</h1>
+
+			<div className="path-wrapper">
+				<div className="path">
+					<Link href="/">Next JS app</Link>
+				</div>
+				<div className="path">
+					<Link href="/courses">Courses</Link>
+				</div>
+				<div className="path">
+					<Link href={`/courses/${route.query.coursename}`}>{route.query.coursename}</Link>
+				</div>
+			</div>
 
 			<ul>
 				<li className="title_child">
