@@ -1,33 +1,91 @@
-
 @font-face {
-  font-family: 'GeistMonoVF';
-  src: url('../pages/fonts/GeistMonoVF.woff');
+	font-family: "GeistMonoVF";
+	src: url("../public/fonts/GeistMonoVF.woff");
 }
 
+:root {
+	--white: #e0e0e0;
+	--black: #171717;
+}
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: #171717;
-  font-family: 'GeistMonoVF';
-
+	height: 100vh;
+	background: var(--black);
+	font-family: "GeistMonoVF";
+	display: flex;
+	padding: 30px;
 }
 
-.course {
+.path-wrapper {
+	background: var(--white);
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
 }
-.title {
-  color: #e0e0e0;
-	display: inline;
+
+.path a {
+	color: var(--black);
+	text-decoration: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+	position: relative;
+	font-size: 25px;
 }
-.routename {
+.path a:hover {
+	opacity: 0.7;
+}
+.path a::after {
+	transform: rotate(45deg);
+	position: absolute;
+	right: 5px;
+	bottom: -7px;
+	margin: auto;
+	height: 25px;
+	width: 2px;
+	background-color: var(--black);
+	content: "";
+}
+.path a::before {
+	transform: rotate(-45deg);
+	position: absolute;
+	right: 5px;
+	top: -7px;
+	margin: auto;
+	height: 25px;
+	width: 2px;
+	background-color: var(--black);
+	content: "";
+}
+.path:last-child a::after, .path:last-child a::before{
+	display: none;
+}
+
+li a {
+	color: #e0e0e0;
+	font-weight: 200;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+li a:before {
+	content: "#";
+	color: #9e9e9ec9;
 	display: inline;
-	color: aqua;
+	margin-right: 10px;
+	font-size: 15px;
+}
+a:hover {
+	border-bottom: 1px solid #e0e0e0;
 }
