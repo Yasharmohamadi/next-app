@@ -27,7 +27,7 @@ body {
 	padding: 5px 0;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	/* justify-content: center; */
 	border-radius: 5px;
 }
 
@@ -115,4 +115,8 @@ li:before {
 }
 li a:hover {
 	border-bottom: 1px solid #e0e0e0;
+}
+
+.error-text {
+	margin-left: 10px;
 }

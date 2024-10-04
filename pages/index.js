@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-
 export default function Home() {
 	const route = useRouter();
 	const goBackHandler = () => {
@@ -13,7 +12,7 @@ export default function Home() {
 	return (
 		<>
 			<div className="path-wrapper">
-			<div className="svg-wrapper" onClick={goBackHandler}>
+				<div className="svg-wrapper" onClick={goBackHandler}>
 					<svg
 						width="15"
 						fill="none"

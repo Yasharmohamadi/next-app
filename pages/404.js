@@ -1,11 +1,12 @@
 import React from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
 
-export default function CourseDetails() {
+export default function NotFound() {
 	const route = useRouter();
 	const goBackHandler = () => {
 		route.back();
+		// route.push('/');
+		// route.replace('/');
 	};
 	return (
 		<div className="path-wrapper">
@@ -26,22 +27,7 @@ export default function CourseDetails() {
 				</svg>
 			</div>
 			<div className="path">
-				<Link href="/">Home</Link>
-			</div>
-			<div className="path">
-				<Link href="/courses">Courses</Link>
-			</div>
-			<div className="path">
-				<Link href={`/courses/${route.query.coursename}`}>
-					{route.query.coursename}
-				</Link>
-			</div>
-			<div className="path">
-				<Link
-					href={`/courses/${route.query.coursename}/${route.query.episode}`}
-				>
-					{route.query.episode}
-				</Link>{" "}
+				<a>this page dousn't exit !</a>
 			</div>
 		</div>
 	);
