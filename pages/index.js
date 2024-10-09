@@ -13,10 +13,7 @@ export default function Home() {
 		<>
 			<ul>
 				<li>
-					<Link href="/courses">Courses</Link>
-				</li>
-				<li>
-					<Link href="/users">Users</Link>
+					<Link href="/[section]" as='/courses'>Courses</Link>
 				</li>
 			</ul>
 		</>

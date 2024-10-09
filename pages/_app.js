@@ -32,12 +32,17 @@ export default function App({ Component, pageProps }) {
 				</div>
 				{route.query.section && (
 					<div className="path">
-						<Link href={`/${route.query.section}`}>{route.query.section}</Link>
+						<Link href={`/[section]`} as={`/${route.query.section}`}>
+							{route.query.section}{" "}
+						</Link>
 					</div>
 				)}
 				{route.query.coursename && (
 					<div className="path">
-						<Link href={`/${route.query.section}/${route.query.coursename}`}>
+						<Link
+							href={`/[section]/[coursename]`}
+							as={`/${route.query.section}/${route.query.coursename}`}
+						>
 							{route.query.coursename}
 						</Link>
 					</div>
@@ -45,7 +50,8 @@ export default function App({ Component, pageProps }) {
 				{route.query.episode && (
 					<div className="path">
 						<Link
-							href={`/${route.query.section}/${route.query.coursename}/${route.query.episode}`}
+							href={`/[section]/[coursename]/[episode]`}
+							as={`/${route.query.section}/${route.query.coursename}/${route.query.episode}`}
 						>
 							{route.query.episode}
 						</Link>{" "}

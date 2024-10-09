@@ -8,16 +8,16 @@ export default function CourseDetails() {
 	return (
 			<ul>
 				<li>
-					<Link href={`/course/${route.query.course}/01`}>01 </Link>
+					<Link href={`/[section]/[coursename]/[episode]`} as={`/${route.query.section}/${route.query.coursename}/01`}>01 </Link>
 				</li>
 				<li>
-					<Link href={`/course/${route.query.course}/02`}>02</Link>
+					<Link href={`/[section]/[coursename]/[episode]`} as={`/${route.query.section}/${route.query.coursename}/02`}>02</Link>
 				</li>
 				<li>
-					<Link href={`/course/${route.query.course}/03`}>03</Link>
+					<Link href={`/[section]/[coursename]/[episode]`} as={`/${route.query.section}/${route.query.coursename}/03`}>03</Link>
 				</li>
 				<li>
-					<Link href={`/course/${route.query.course}/04`}>04</Link>
+					<Link href={`/[section]/[coursename]/[episode]`} as={`/${route.query.section}/${route.query.coursename}/04`}>04</Link>
 				</li>
 			</ul>
 	);
